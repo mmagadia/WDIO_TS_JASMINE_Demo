@@ -6,7 +6,7 @@ var buttonsArea_page_1 = require("../pages/buttonsArea.page");
 var monsterList_page_1 = require("../pages/monsterList.page");
 var username = 'bob@bob.com';
 var password = 'Test123';
-describe('Test Suite: Create Random Monsters', function () {
+describe('Test Suite: Create Random Monsters Team', function () {
     beforeAll(function () {
         // Add code here
     });
@@ -18,7 +18,7 @@ describe('Test Suite: Create Random Monsters', function () {
         // Add code here
     });
     afterEach(function () { });
-    it('should create random monster', function () {
+    it('should create random monster Team', function () {
         buttonsArea_page_1.default.createRandomMonsterTeamButton.click();
         expect(monsterList_page_1.default.monsterCountText.getText()).toBe('Number of monsters: 5', 'Number of monster is not correct');
         expect(monsterList_page_1.default.monsterItemContainerList.length === 5).toBe(true, 'Monster list length is not correct');

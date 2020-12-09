@@ -6,7 +6,7 @@ import MonsterListPage from '../pages/monsterList.page';
 const username = 'bob@bob.com';
 const password = 'Test123';
 
-describe('Test Suite: Create Random Monsters', () => {
+describe('Test Suite: Create Random Monsters Team', () => {
     beforeAll(() => {
       // Add code here
     });
@@ -23,7 +23,7 @@ describe('Test Suite: Create Random Monsters', () => {
     afterEach(() => {});
 
 
-    it('should create random monster', () => {
+    it('should create random monster Team', () => {
       ButtonsAreaPage.createRandomMonsterTeamButton.click();
 
       expect(

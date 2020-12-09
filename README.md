@@ -15,17 +15,16 @@ npm start
 
 npm install
 
+## To compile
+
+i.e.
+tsc --target es5 ./tests/randomMonsterTeam.spec.ts
+tsc --target es5 --resolveJsonModule ./tests/randomMonsterTeam.spec.ts
+
 ## To run suite
 
-npm test wdio.conf.js
---suite smoke
---suite login
---suite nav
---suite createMonster
---suite editMonster
---suite createRandomMonster
---suite removeAllMonster
---suite deleteMonster
---suite randomMonsterTeam
---suite unfavoriteAll
---suite sortMonster
+npm test -- wdio.conf.js --suite
+
+i.e.
+npm test -- wdio.conf.js --suite smoke
+npm test -- wdio.conf.js --suite all

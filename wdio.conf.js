@@ -37,6 +37,7 @@ exports.config = {
     unfavoriteAll: ["./tests/unfavoriteAll.spec.js"],
     sortMonster: ["./tests/sortMonster.spec.js"],
     all: [
+      "./tests/smoke.spec.js",
       "./tests/login.spec.js",
       "./tests/nav.spec.js",
       "./tests/createMonster.spec.js",
